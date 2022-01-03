@@ -102,7 +102,7 @@ public class Main {
         int[] moedas = new int[] { 100, 50, 25, 10, 5, 1 };
 
         while (valorTroco > 0) {
-            System.out.println(Constants.MENSAGENS.TROCO_CEDULAS + valorTroco.intValue());
+            System.out.println(Constants.MENSAGENS.TROCO_CEDULAS + (valorTroco.intValue()-1));
             for (int nota : notas) {
                 sobra = valorTroco.intValue() / nota;
                 valorTroco = valorTroco % nota;
